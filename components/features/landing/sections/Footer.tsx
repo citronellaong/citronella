@@ -12,13 +12,13 @@ export const Footer = () => {
             <div className="relative w-11 h-11">
                 <Image 
                   src="/images/Citro png logo.png" 
-                  alt="Citronela Logo" 
+                  alt="Citronella Logo" 
                   fill
                   className="object-contain"
                 />
             </div>
             <span className={`${avigea.className} text-2xl font-normal tracking-wide`}>
-              <span className="text-lime-400">Citro</span><span className="text-white">nela</span>
+              <span className="text-lime-400">Citro</span><span className="text-white">nella</span>
             </span>
           </div>
           <div className="flex gap-6 text-sm text-zinc-500">
@@ -26,7 +26,7 @@ export const Footer = () => {
             <Link href="/legal/privacy" className="hover:text-lime-300 transition-colors">Privacidad</Link>
             <Link href="/login" className="hover:text-lime-300 transition-colors">Login</Link>
           </div>
-          <p className="text-xs text-zinc-600">&copy; 2026 Citronela. Cultivado con 🌿</p>
+          <p className="text-xs text-zinc-600">&copy; 2026 Citronella. Cultivado con 🌿</p>
         </div>
       </div>
     </footer>

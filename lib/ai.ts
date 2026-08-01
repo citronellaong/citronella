@@ -55,7 +55,7 @@ export function generateProductDescription(data: {
   if (data.genetics) desc += ` Genética: ${data.genetics}.`;
   if (data.thc !== undefined) desc += ` THC: ${data.thc}%.`;
   if (data.cbd !== undefined) desc += ` CBD: ${data.cbd}%.`;
-  desc += ' Producto de calidad verificada por Citronela.';
+  desc += ' Producto de calidad verificada por Citronella.';
   return desc;
 }
 

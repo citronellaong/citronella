@@ -11,14 +11,14 @@ export const Header = React.forwardRef<HTMLElement, {}>((props, ref) => {
           <div className="relative w-14 h-14 group-hover:scale-110 transition-transform duration-300">
             <Image 
               src="/images/Citro png logo.png" 
-              alt="Citronela Logo" 
+              alt="Citronella Logo" 
               fill
               className="object-contain"
               priority
             />
           </div>
           <span className={`${avigea.className} text-3xl font-normal tracking-wide`}>
-            <span className="text-lime-400 group-hover:text-lime-300 transition-colors duration-300">Citro</span><span className="text-white">nela</span>
+            <span className="text-lime-400 group-hover:text-lime-300 transition-colors duration-300">Citro</span><span className="text-white">nella</span>
           </span>
         </Link>
         <nav className="flex items-center gap-2 sm:gap-3">

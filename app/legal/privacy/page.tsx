@@ -14,7 +14,7 @@ async function getLegalContent(type: 'terms' | 'privacy'): Promise<string> {
   }
 }
 
-const FALLBACK_PRIVACY = `En Citronela, la privacidad de nuestros socios es fundamental. Esta política describe cómo recopilamos, usamos y protegemos tu información.
+const FALLBACK_PRIVACY = `En Citronella, la privacidad de nuestros socios es fundamental. Esta política describe cómo recopilamos, usamos y protegemos tu información.
 
 1. INFORMACIÓN QUE RECOPILAMOS
 - Información de registro: nombre de usuario, email, documentación de verificación
@@ -40,7 +40,7 @@ Podés solicitar acceso, corrección o eliminación de tu información personal 
 6. COOKIES
 Usamos cookies esenciales para el funcionamiento de la plataforma.
 
-Para ejercer tus derechos o hacer consultas, contactá al equipo de Citronela.`;
+Para ejercer tus derechos o hacer consultas, contactá al equipo de Citronella.`;
 
 export default async function PrivacyPage() {
   const content = await getLegalContent('privacy');
@@ -55,7 +55,7 @@ export default async function PrivacyPage() {
           </div>
           <div>
             <h1 className="text-2xl font-bold text-zinc-50">Política de Privacidad</h1>
-            <p className="text-sm text-zinc-400">Plataforma Citronela</p>
+            <p className="text-sm text-zinc-400">Plataforma Citronella</p>
           </div>
         </div>
 

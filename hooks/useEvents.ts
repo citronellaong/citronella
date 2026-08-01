@@ -81,7 +81,7 @@ export const TRENDING_MOCK_DATA: EventData[] = [
   },
   {
     id: 105,
-    title: 'Copa Citronela 2026',
+    title: 'Copa Citronella 2026',
     category: 'Eventos',
     date: '25 de Mayo',
     time: '10hs',

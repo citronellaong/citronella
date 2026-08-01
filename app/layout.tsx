@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Citronela - Cultivo Hidropónico',
+  title: 'Citronella - Cultivo Hidropónico',
   description: 'Plataforma de gestión de cultivos hidropónicos y marketplace',
 };
 

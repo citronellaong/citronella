@@ -14,7 +14,7 @@ export const FeaturesGrid = React.forwardRef<HTMLElement, {}>((props, ref) => {
       <div className="relative max-w-6xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 data-feat-title className={`${avigea.className} text-4xl sm:text-5xl font-normal tracking-tight text-white mb-4`}>
-            ¿Qué es <span className="text-lime-400">Citronela?</span>
+            ¿Qué es <span className="text-lime-400">Citronella?</span>
           </h2>
           <p data-feat-title className="text-zinc-400 text-xl">
             Una asociación civil que combina ciencia, legalidad y solidaridad para que el cannabis medicinal sea accesible, seguro y transparente.

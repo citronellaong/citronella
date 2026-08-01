@@ -14,10 +14,10 @@ async function getLegalContent(type: 'terms' | 'privacy'): Promise<string> {
   }
 }
 
-const FALLBACK_TERMS = `Bienvenido a Citronela. Al usar nuestra plataforma, aceptás los siguientes términos y condiciones.
+const FALLBACK_TERMS = `Bienvenido a Citronella. Al usar nuestra plataforma, aceptás los siguientes términos y condiciones.
 
 1. ACEPTACIÓN DE TÉRMINOS
-Al acceder y usar la plataforma Citronela, aceptás estar sujeto a estos términos y condiciones de uso.
+Al acceder y usar la plataforma Citronella, aceptás estar sujeto a estos términos y condiciones de uso.
 
 2. USO DE LA PLATAFORMA
 La plataforma está destinada exclusivamente a socios verificados. El uso indebido puede resultar en la suspensión de tu cuenta.
@@ -31,7 +31,7 @@ Tu información personal está protegida según nuestra Política de Privacidad.
 5. MODIFICACIONES
 Nos reservamos el derecho de modificar estos términos con previo aviso.
 
-Para consultas, contactá al equipo de Citronela.`;
+Para consultas, contactá al equipo de Citronella.`;
 
 export default async function TermsPage() {
   const content = await getLegalContent('terms');
@@ -46,7 +46,7 @@ export default async function TermsPage() {
           </div>
           <div>
             <h1 className="text-2xl font-bold text-zinc-50">Términos y Condiciones</h1>
-            <p className="text-sm text-zinc-400">Plataforma Citronela</p>
+            <p className="text-sm text-zinc-400">Plataforma Citronella</p>
           </div>
         </div>
 
