@@ -26,7 +26,7 @@ export const FeaturesGrid = React.forwardRef<HTMLElement, {}>((props, ref) => {
             {
               icon: '⚖️',
               title: 'Marco Legal',
-              desc: 'Operamos bajo la Ley 27.357 con gestión completa del REPROCAN. Tu membresía tiene respaldo institucional y jurídico.',
+              desc: 'Operamos bajo la Ley 27.350 con gestión completa del REPROCAN. Tu membresía tiene respaldo institucional y jurídico.',
               gradient: 'from-lime-300 to-green-600',
               glow: 'rgba(163,230,53,0.3)',
               border: 'border-lime-400/15 hover:border-lime-400/40',

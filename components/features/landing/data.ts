@@ -1,7 +1,7 @@
 export const heroStats = [
   { n: '150+', l: 'Pacientes' },
   { n: 'Lab Propio', l: 'Analitos' },
-  { n: 'Ley 27.357', l: 'Marco Legal' },
+  { n: 'Ley 27.350', l: 'Marco Legal' },
 ];
 
 export const panelConfig = [
@@ -53,7 +53,7 @@ export const features = [
   {
     icon: '⚖️',
     title: 'Gestión REPROCAN',
-    desc: 'Trámites legales simplificados. Nuestro equipo administrativo gestiona tu credencial para que cumplas con la Ley 27.357 sin preocupaciones.',
+    desc: 'Trámites legales simplificados. Nuestro equipo administrativo gestiona tu credencial para que cumplas con la Ley 27.350 sin preocupaciones.',
     gradient: 'from-lime-300 to-green-600',
     glow: 'rgba(163,230,53,0.3)',
     border: 'border-lime-400/15 hover:border-lime-400/40',
@@ -143,7 +143,7 @@ export const communityPosts = [
     av: '🧑',
     t: '3d',
     title: 'Dejé el mercado negro hace 6 meses',
-    c: 'La tranquilidad de saber que mi medicina está analizada en laboratorio y respaldada por la Ley 27.357 no tiene precio.',
+    c: 'La tranquilidad de saber que mi medicina está analizada en laboratorio y respaldada por la Ley 27.350 no tiene precio.',
     l: 52,
     cm: 31,
     tag: 'Historia',
