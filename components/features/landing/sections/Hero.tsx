@@ -48,7 +48,7 @@ export const Hero = React.forwardRef<HTMLElement, HeroProps>(({
       <LeafIcon className="absolute bottom-[20%] left-[18%] w-14 h-14 text-amber-400/[0.05] animate-float [animation-delay:-3s] rotate-45" />
 
       <div ref={textRef} className="relative max-w-3xl mx-auto px-6 w-full text-center z-10">
-        <h1 data-hero-text className={`${avigea.className} text-6xl sm:text-7xl lg:text-8xl font-normal tracking-tight leading-[1.05] mb-6`}>
+        <h1 data-hero-text className={`${avigea.className} text-6xl sm:text-7xl lg:text-8xl font-normal tracking-tight leading-[1.05] pt-3 mb-6`}>
           Cannabis medicinal
           <br className="hidden sm:block" />
           <span className="relative inline-block">
@@ -105,13 +105,6 @@ export const Hero = React.forwardRef<HTMLElement, HeroProps>(({
               <div className="text-xs sm:text-sm text-zinc-500 uppercase tracking-wider mt-1">{s.l}</div>
             </div>
           ))}
-        </div>
-      </div>
-
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in [animation-delay:2s]">
-        <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em]">Scroll</span>
-        <div className="w-5 h-8 rounded-full border border-zinc-600 flex items-start justify-center p-1">
-          <div className="w-1 h-2 rounded-full bg-lime-400 animate-bounce" />
         </div>
       </div>
     </section>
