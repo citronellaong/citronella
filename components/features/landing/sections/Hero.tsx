@@ -2,9 +2,7 @@ import React, { Suspense, lazy, Component } from 'react';
 import Link from 'next/link';
 import { AnimatedOrb } from '@/components/shared/AnimatedOrb';
 import { LeafIcon } from '@/components/shared/LeafIcon';
-import { PhoneMockup } from '@/components/shared/PhoneMockup';
 import { avigea } from '@/lib/fonts';
-import { DashboardScreen } from '../screens/DashboardScreen';
 import { heroStats } from '../data';
 
 const HeroScene = lazy(() => import('@/components/landing/Scene3D').then((m) => ({ default: m.HeroScene })));
@@ -25,10 +23,11 @@ class SceneErrorBoundary extends Component<{ children: React.ReactNode }, { hasE
 
 interface HeroProps {
   textRef: React.RefObject<HTMLDivElement>;
-  phoneRef: React.RefObject<HTMLDivElement>;
 }
 
-export const Hero = React.forwardRef<HTMLElement, HeroProps>(({ textRef, phoneRef }, ref) => {
+export const Hero = React.forwardRef<HTMLElement, HeroProps>(({ 
+  textRef,
+}, ref) => {
   return (
     <section ref={ref} className="relative min-h-screen flex items-center overflow-hidden pt-20 z-[1]">
       <AnimatedOrb data-parallax-orb className="top-[-10%] left-[-5%] w-[520px] h-[520px] blur-[100px]" color="rgba(163,230,53,0.18)" />
@@ -106,18 +105,6 @@ export const Hero = React.forwardRef<HTMLElement, HeroProps>(({ textRef, phoneRe
               <div className="text-xs sm:text-sm text-zinc-500 uppercase tracking-wider mt-1">{s.l}</div>
             </div>
           ))}
-        </div>
-      </div>
-
-      <div
-        ref={phoneRef}
-        className="fixed inset-0 z-20 flex items-center justify-center will-change-transform pointer-events-none opacity-0"
-        style={{ perspective: '1200px' }}
-      >
-        <div className="animate-float-phone">
-          <PhoneMockup glowColor="rgba(163,230,53,0.18)">
-            <DashboardScreen />
-          </PhoneMockup>
         </div>
       </div>
 

@@ -1,8 +1,13 @@
-# Citronela MVP
+# Citronela
 
-Plataforma de gestión de cultivos hidropónicos y marketplace.
+Asociación Civil dedicada al cannabis medicinal: acceso legal, científico y solidario en Córdoba, Argentina.
+
+## Estado actual
+
+**La landing page está funcional.** El resto de la plataforma está en construcción.
 
 ## Stack
+
 - Next.js 14 (App Router)
 - Drizzle ORM
 - Neon PostgreSQL
@@ -35,13 +40,13 @@ npm run dev
 
 ```
 app/
-├── api/          # API routes
-├── login/        # Auth pages
-├── register/
-├── dashboard/   # Protected area
-db/
-└── schema.ts    # Drizzle schema
-lib/
-├── db.ts        # Database connection
-└── auth.ts      # Auth utilities
+├── page.tsx       # Landing page (única funcional por ahora)
+├── layout.tsx     # Root layout
+└── globals.css    # Global styles
+components/
+├── landing/       # Landing page components
+└── features/landing/  # Landing page sections
+public/
+├── images/        # Static images
+└── fonts/         # Custom fonts
 ```

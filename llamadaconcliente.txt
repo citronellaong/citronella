@@ -1,0 +1,624 @@
+Impromptu Google Meet Meeting - April 22
+VIEW RECORDING: https://fathom.video/share/Mxt7HprzsvDEbx7LYrNH72aTb8JhJaD1
+Proyecto Citronela: Misión y Orígenes @ 0:37
+
+Fusa Labs inicia la reunión para lanzar el proyecto Citronela, que surgió de los 15 años de experiencia de URSMOKED y tres años de trabajo especializado en la gestión de suelos para el cultivo de cannabis. La misión central del proyecto es desafiar el estigma en torno al cannabis y promover sus aplicaciones médicas, ayudando a pacientes con artritis, Parkinson, depresión y otras condiciones. El equipo ha evolucionado desde operaciones internas a la atención de clientes externos, y está compuesto por médicos, abogados, paisajistas, profesores y otros profesionales. El nombre "Citronela" se originó de manera pragmática cuando el primer cliente llegó con plantas de citronela para su propagación, coincidiendo con su necesidad de un nombre de archivo de proyecto no estigmatizado.
+
+Estructura Legal: Operaciones de la ONG y Economía de Tokens @ 8:51
+
+El proyecto opera como una ONG (organización sin fines de lucro) con una estructura legal sofisticada diseñada para cumplir con las regulaciones del cannabis. La ONG está autorizada a gestionar hasta 150 participantes, cifra que amplían a 450 mediante un modelo de "cultivadores solidarios": cada cultivador apoya a tres pacientes sin cultivo propio. El liderazgo incluye a URSMOKED como Director de Investigación, Desarrollo y Tecnología, a Gustavo Alejandro Pérez como Director de Infraestructura y Producción, y a otros jefes de departamento. Para evitar transacciones monetarias directas mientras operan como ONG, implementan un sistema de tokens: los usuarios reciben tokens mensuales (p. ej., 300 tokens) al pagar la suscripción, que utilizan para todas las actividades de la plataforma. La contabilidad y la gestión financiera se manejarán por separado por un contador dedicado y el tesorero de la ONG, sin integrarse en la plataforma en sí.
+
+Arquitectura de la Plataforma: Tres Módulos Centrales @ 11:41
+
+La plataforma comprende tres secciones esenciales: (1) Mi Cultivo—para el seguimiento del crecimiento individual de cada planta con parámetros técnicos; (2) Marketplace/GTL—para intercambios de productos entre la ONG, los usuarios y transacciones entre pares; y (3) Foro Comunitario—para el intercambio de conocimiento y creación de comunidad. La plataforma sirve a tres arquetipos de usuario: el curioso principiante (necesita educación y una entrada de bajo riesgo), el cultivador metódico (requiere seguimiento técnico preciso e informes exportables) y el emprendedor (busca reputación en el marketplace y monetización). La autenticación de usuarios requiere verificación dual: confirmación por correo electrónico más aprobación del administrador tras revisar la documentación legal del usuario y su expediente interno.
+
+Cronograma de Desarrollo y Estrategia Beta @ 25:11
+
+Fabio estima que con dos a tres desarrolladores, el desarrollo completo de la plataforma tomará aproximadamente tres meses, contemplando frontend, backend, base de datos, servicios en la nube, configuración de dominio, balanceo de carga y diseño UX/UI. Sin embargo, para acelerar la validación, el equipo entregará una versión beta funcional en dos semanas, permitiendo a Santiago interactuar con el sistema y decidir sobre la inversión completa antes de comprometerse con el contrato total. Se espera que las aprobaciones administrativas de la ONG de Santiago tomen tres meses, y su infraestructura de cultivo y clientes iniciales ya están en su lugar. El área de producción está lista, el material genético disponible, y las plantas iniciarán fases de crecimiento vegetativo una vez instalada la infraestructura de iluminación el 29 de abril.
+
+Alcance e Ingeniería de Requerimientos @ 27:13
+
+El equipo enfatiza la importancia de una ingeniería de requerimientos detallada para definir el alcance y los límites del sistema. Fabio usa el ejemplo de Google Meet: el alcance es "videollamadas y usuarios", los límites son "duración de una hora para cuentas gratuitas". Para Citronela, el alcance incluye todas las tareas relacionadas con el cultivo (mano de obra, muestreo de suelos, evaluación de espacios, documentación de metodologías, análisis de calidad), mientras que los límites incluyen tiempos de entrega de análisis y frecuencias de visitas de trabajo. Santiago proporcionará planillas de seguimiento detalladas y ejemplos de documentación para asegurar que el equipo de desarrollo comprenda todos los campos de datos necesarios, los cronogramas de crecimiento de las plantas (variedades fotoperiódicas vs. automáticas) y el flujo completo desde la evaluación inicial del sitio hasta la planificación de infraestructura y el monitoreo continuo.
+
+Integración de Hardware y Automatización de Datos @ 29:24
+
+Santiago actualmente utiliza equipamiento de laboratorio manual (refractómetro, medidores de pH, medidores de CE) para recolectar datos de cultivo, que luego documenta manualmente. El equipo propone integrar sensores de hardware automatizados para optimizar la recolección de datos, particularmente para control de luz, medición de CE y regulación de nutrientes—críticos por los estrechos rangos óptimos del cannabis. Fusa Labs tiene acceso a un ingeniero electromecánico cuya tesis se enfocó en tratamiento de sensores, aportando experiencia para diseñar e integrar estos sistemas. Si bien la integración de hardware se difiere a una fase posterior, la plataforma inicialmente incluirá campos de entrada para registro manual de datos que más adelante podrán conectarse a sensores automatizados. La formación de Santiago en laboratorio clínico e histopatología lo hace idóneo para validar la calidad y precisión de los datos.
+
+Documentación Técnica e Informes de Cannabinoides @ 38:26
+
+Santiago mostró sus informes actuales de análisis de cannabinoides, que incluyen datos de recolección y resultados de pruebas con porcentajes de THC/CBD y otros perfiles de cannabinoides. Estas especificaciones técnicas se integrarán en la plataforma como archivos Excel descargables y descripciones de producto. El marketplace puede aprovechar estos datos—permitiendo a los usuarios buscar y filtrar productos por contenido de cannabinoides (THC, CBD, CDA)—creando una ventaja competitiva y herramienta de marketing. Santiago proporcionará planillas de seguimiento y plantillas de documentación de ejemplo a través de una unidad compartida para que el equipo de desarrollo entienda el alcance completo de los campos de datos requeridos y los formatos de reporte.
+
+Resumen de la Reunión y Próximos Pasos @ 45:41
+
+La reunión aclaró con éxito la visión del proyecto Citronela, la arquitectura de la plataforma y los requerimientos técnicos. Fusa Labs desarrollará una versión beta en dos semanas, acompañada de una propuesta presupuestaria integral con cronogramas de desarrollo, planes de pago, costos de despliegue a producción y estándares profesionales de seguridad. La beta permitirá a Santiago probar el sistema y confirmar su inversión antes de finalizar el contrato de desarrollo completo. Santiago proporcionará una unidad compartida con todas las planillas de seguimiento, plantillas de documentación y muestras de análisis de cannabinoides para guiar el desarrollo. El equipo se volverá a reunir para finalizar los términos del contrato, acuerdos de propiedad intelectual y detalles de compensación. El límite de tiempo de Google Meet obligó a finalizar la sesión, con planes de continuar en una nueva reunión para completar las discusiones contractuales.
+
+Comunicación y Gobernanza del Proyecto @ 46:27
+
+Fusa Labs establecerá un grupo de comunicación dedicado que incluya al equipo central de desarrollo y a Santiago para habilitar la coordinación directa, responder preguntas y resolver incidencias en tiempo real durante horarios prudentes. Santiago confirmó disponibilidad para reunirse con otros miembros de la ONG (sector de producción, departamento de marketing, asesoría legal) según sea necesario. El equipo programará dailies técnicas regulares y revisiones de desarrollo de producto para mantener a Santiago informado e involucrado durante todo el proceso de desarrollo.
+
+Mi Cultivo: Requerimientos Detallados de Seguimiento del Cultivo @ 48:17
+
+Cada usuario puede crear una parcela de cultivo con hasta nueve plantas por membresía. El seguimiento individual de cada planta incluye: genética, tiempo de germinación, estado fenológico, capacidad foliar, crecimiento radicular, control de pH, conductividad eléctrica (CE), tipo de sustrato, notas manuales de crecimiento y clasificación del tipo de semilla (regular, fotoperiódica, automática, feminizada, etc.). Administradores y superadministradores acceden a un panel unificado que muestra las parcelas de todos los usuarios para un monitoreo centralizado. El sistema debe soportar el control individual del usuario a la vez que habilita una supervisión integral desde la oficina administrativa.
+
+Marketplace y Eventos: Comercio Electrónico y Participación Comunitaria @ 49:50
+
+El Marketplace (GTL) facilita intercambios de productos entre la ONG y los usuarios, y directamente entre usuarios, con detalles que incluyen ubicación, fecha y precio negociado. Un sistema de carrito de compras alimenta la sección "mis canjes". Un módulo de Eventos muestra las actividades próximas (talleres, charlas, clases) en un formato de agenda similar a El Pogo, permitiendo a los usuarios comprar entradas utilizando tokens o dinero real. Los miembros de la comunidad pueden crear sus propios temas de discusión dentro del foro, que incluye secciones dedicadas a charlas, clases y temas generados por usuarios, con capacidades de moderación para que los administradores hagan cumplir las normas de la comunidad.
+
+Foro y Términos: Gobernanza Comunitaria y Protección Legal @ 52:03
+
+El Foro Comunitario requiere vistas duales para administradores y usuarios a fin de habilitar la moderación de publicaciones que violen las normas de la comunidad. Los usuarios pueden subir videos, imágenes y archivos para respaldar las discusiones. Una página de Términos y Condiciones sirve como plantilla legal no interactiva que protege a la plataforma de responsabilidad, especificando privacidad absoluta, derecho de admisión reservado, prohibición de transacciones directas (solo basadas en tokens) y planes privados uno a uno. Esta documentación se finalizará en consulta con el asesor legal de la ONG.
+
+Estructura de Compensación y Composición del Equipo @ 52:58
+
+Fabio Arias, líder técnico con seis años en desarrollo de software (incluyendo roles en Coder House y Fort Latam), propone un modelo de tarifa por hora: 50 USD/hora para desarrolladores senior, 20 USD/hora para desarrolladores junior. El equipo entregará actualizaciones diarias y nuevas funcionalidades durante el desarrollo. Fabio gestionará los contratos y garantizará la satisfacción del cliente a lo largo del ciclo del proyecto. El equipo de desarrollo se coordinará con Santiago y potencialmente con otros miembros de la ONG (sector de producción, departamento de marketing) para recopilar requerimientos y brindar actualizaciones. Fabio también facilitará las discusiones con el asesor legal de Santiago respecto a términos contractuales y cláusulas de propiedad intelectual.
+
+Propiedad Intelectual y Enfoque de Desarrollo @ 56:24
+
+Fusa Labs retiene la titularidad de la propiedad intelectual del código, pero Santiago y la ONG reciben la propiedad plena de la plataforma desarrollada y su funcionalidad. El código se diseñará con patrones de diseño limpios y principios SOLID, permitiendo que futuros desarrolladores la mantengan y extiendan de forma independiente si Fusa Labs se desengancha. Santiago tendrá acceso a las credenciales de GitHub, podrá revisar el código fuente, participar en dailies técnicas y interactuar con versiones beta. Fabio coordinará con el asesor legal de Santiago para redactar un contrato que aborde propiedad intelectual, términos de servicio y otras cláusulas relevantes.
+
+
+----------------------------------------------------------------
+
+
+
+Transcripcion: 
+
+Impromptu Google Meet Meeting - April 22
+VIEW RECORDING - 58 mins (No highlights): https://fathom.video/share/Mxt7HprzsvDEbx7LYrNH72aTb8JhJaD1
+
+---
+
+0:02 - Pedro Enriquez
+  ¿Ese Fathom es tuyo, Jesús, o lo pusiste vos? No, no es mío, yo trataba...
+
+0:10 - JP
+  Lo puse yo, es el de Fusalo. Están tratando de entrar hace cinco minutos por ahí, pero como no era el correo con el que habíamos agendado, entonces no entraba nunca.  Y me cambié el correo que me habían mandado.
+
+0:26 - Pedro Enriquez
+  Pero nunca me llegó un mail igual. Bueno, no importa. Ahí el grupo le había pasado. Bueno, arrancamos, me parece.
+
+0:37 - Fusa Labs (labsfusa@gmail.com)
+  Bien. Bueno, primero que nada, gracias a todos por estar acá en esta llamada. El objetivo de la misma es dar inicio al proyecto de Citronera.  Te comento, Santi, que la semana pasada estuvimos conversando mucho entre nosotros, nos reunimos varias veces. Tenemos... Planificando un poco tu proyecto, viendo algunas preguntas que deberíamos hacerte, algunas, las especificaciones que necesita el proyecto, qué cosas por ahí vas a necesitar, qué otras cosas no, por dónde tenemos que indagar.  En base a lo que estuvimos haciendo nosotros, todas las últimas llamadas que nos reunimos solos, digamos, a ver un segundo, voy a buscar un documento, preparé una llamada yo, una presentación que les mostré a los chicos en clase pasada.  Bien. Chicos, ¿no se acuerdan cómo era la presentación que les mostré a la clase pasada? HTML. Ah, ahí va, ahí va.
+
+1:49 - Fabio Arias
+  En mi chat lo tenés a la presentación, creo. Grande Jesús. Vamos, vale, hay que estar, hay que estar, hay que tener esa memoria.
+
+2:00 - JP
+  No, me parece que igual había entrado de nuevo hace poco y me acordé por el nombre que le pusiste.  Empecemos, empecemos, mirá, yo pregunto así, bien tranqui, el nombre, Citronela. A ver, contame.
+
+2:19 - URSMOKED
+  Bien, les comento un poco de dónde surge el...
+
+2:22 - Fabio Arias
+  Sí, arrancá, arrancá nomás con lo que quieras.
+
+2:25 - URSMOKED
+  El proyecto este en realidad surge a partir de mis 15 años de existencia, en mi breve y loca adolescencia, en la que decidí...  Fumar marihuana. Fumar marihuana. Ya va, vamos por la más profunda que eso. Estamos en serio. Lo que representa Citronela es la no tolerancia a la opresión desde afuera, al no podrás.  Nosotros queremos romper un poco con ese paradigma de la marihuana es ilícita, una droga. Fathom todo lo malo que tenés dentro de la sociedad y sabemos que puede generar un bien.  Son muchos años de estudio, muchos años de proyecto, muchos años de aprender sobre botánica, sobre biología, sobre sustratos, sobre cultivos, sobre aplicación medicinal de la planta.  Lo que nosotros queremos para lo que es el porvenir de la empresa es ofrecer tanto a este nicho comercial que es la comunidad canádica, el conocimiento para poder desarrollar de forma práctica sus cultivos y que tengan una mejoría en la calidad de cultivo que están teniendo.  Tenemos varios clientes nosotros que se acercan a nosotros con el objetivo de poder aumentar la calidad de flor y empezar a trabajar en lo que son los derivados relacionados al cannabis medicinal.  No solo me fumo un porrito porque me huele el coco. Si no, quiero ayudar a mi vecino que tiene artrosis, quiero ayudar a mi vecino que tiene Parkinson, quiero ayudar a mi tía que está atravesando por una depresión muy dura hace muchos años y no encuentra la forma de salud de eso.  Ese es el nicho al que nosotros apuntamos.
+
+4:16 - Fabio Arias
+  Sí, yo lo uso a la marihuana como para la artritis, tengo mucha artritis, entonces sirve mucho la marihuana. Cannabis en realidad me gusta decirle más que marihuana, me gusta decirle cannabis.  A mí me gusta el nombre original.
+
+4:33 - URSMOKED
+  Sí, marihuana en realidad es un término más peyorativo. Es para ser técnico, viste.
+
+4:40 - Fabio Arias
+  Exactamente.
+
+4:41 - URSMOKED
+  Bien. ¿De dónde surge Citroneta? Sí. No, continuamos, perdón.
+
+4:48 - Fusa Labs (labsfusa@gmail.com)
+  Ok, perdón. ¿De dónde surge Citroneta?
+
+4:50 - URSMOKED
+  Bien. Alrededor de tres años, contando para atrás, fue que yo empecé a formar un equipito para empezar a... Y, especializarnos en lo que es el manejo de suelo.  Entonces, cada vez que viene un cliente con nosotros a querer ampliar su cultivo, a querer aplicar técnicas nuevas, nosotros lo primero que hacemos es un análisis de su suelo y la posterior preparación.  Con el primer cliente que tuvimos, nos pasó que yo tuve que abrir un expediente de seguimiento para todo el trabajo que hacíamos y obviamente no podía ponerle expediente proyecto porro.  Así que ahí fue donde le pusimos citronela. Coincidió luego que el cliente este que nosotros estábamos haciendo todo el manejo de suelo, instalación de invernadero dentro de lo que es la propiedad de él, llegó con muchas citronelas en gajo para hacer reproducción.  Entonces, en el momento que llegó con las citronelas e hicimos todo el preparado de la parte visual del patio con ese trabajo con citronelas que hicimos, les dije, muchachos, ¿quieren ver cómo...?  ¿Cómo se llama el expediente con el que estamos trabajando? Y ahí se decidió el nombre. Continuamos para adelante con Proyecto Citronel.
+
+6:10 - JP
+  Excelente.
+
+6:13 - URSMOKED
+  Bien. Ah, perdón.
+
+6:16 - JP
+  Santi, vos hablaste de nosotros y ya de clientes. ¿Eso sería entonces en qué sentido?
+
+6:24 - URSMOKED
+  ¿Cómo lo están encarando ya hoy en día?
+
+6:26 - JP
+  ¿Qué es lo que ya está, digamos? Bien.
+
+6:29 - URSMOKED
+  Hablo de nosotros porque en realidad somos un grupo bastante amplio. Con nosotros laburan médicos, abogados, paisajistas. Gente amante tanto del cannabis como fuera del mundo del mismo.  Colaboramos con profesores, gente allegada a la política, hacemos capacitaciones, charlas, hacemos talleres, hacemos distintas prácticas, tanto agrícolas como de laboratorio, para lo que es el círculo interno con el que venimos trabajando.  Y hasta hace poco veníamos haciendo únicamente trabajo interno, pero nos empezaron a llegar solicitudes de clientes que nos piden, tanto el asociamiento médico y legal, como la parte técnica y agrícola de la planta.
+
+7:20 - JP
+  Perfecto. Entonces ahí digamos que de a poco vamos direccionando lo que va a ser este proyecto, que ahora solamente Adri que ya tiene ahí en la pantalla para mostrarlo, se va yendo para ese lado.  Entonces digamos que este proyecto, y no me quiero adelantar yo, sino a la idea que por ahora estoy teniendo, es que simplemente va a abarcar la parte de conectar con esos nuevos clientes, ¿no?  Exactamente. A través de uno o varios servicios, es mi pregunta.
+
+7:55 - URSMOKED
+  Nosotros en realidad hasta ahora nos venimos comunicando con la gente que está... Fathom, Fathom, Fathom, Fathom, Fathom, Fathom. Un lugar tanto para conocernos como para desarrollar las actividades que pueden hacer con nosotros.
+
+8:39 - JP
+  Claro, o sea, no solamente lo que es algo meramente que podría ser transaccional, sino también afianzar a lo que llamaríamos la comunidad, digamos.  Exactamente.
+
+8:51 - URSMOKED
+  Es más, todo lo que sea el apartado transaccional, nosotros al estar operando bajo las normativas de una ONG, tenemos que…  So to avoid it. Okay. In the economy we can have a problem. Yes.
+
+9:06 - Fabio Arias
+  So that's the system of tokens.
+
+9:09 - URSMOKED
+  Of course. The system of tokens implemented will try to solve this conflict. Mensualmente, if you add a certain amount of tokens to the user to pay them on the platform.  Excellent. The only payment that he is authorized to do is the payment of his quota. Ah, well, well, well.
+
+9:32 - JP
+  Okay. I was going to say something about a minute. Yes.
+
+9:38 - Fusa Labs (labsfusa@gmail.com)
+  yes. Okay. will continue to ask questions.
+
+9:44 - Fabio Arias
+  Perfect. Contest. I'm thinking, yes, in the community, could we also put an option for the profiles that can be talked to each other?  Would you be interested in an internment?
+
+9:58 - URSMOKED
+  Yes. interno así
+
+10:00 - Fabio Arias
+  También que se puedan comunicar con los administradores y que cada uno tenga su perfil. Se me hace que eso de los perfiles va a afianzar más el nicho que vos estás armando, que vos entras a tu perfil, entras al foro, tenés tus datos, tus detalles, puede ser tus gustos en tipo de cogollo, genética, algo así para nuestro ámbito canábico.
+
+10:27 - URSMOKED
+  Claro, mi idea es que el cliente sienta que está teniendo un seguimiento constante, tanto de su apartado legal y médico, como de la producción que se está realizando en su propiedad.  Porque nosotros lo que ofrecemos es hacer los cultivos intensivos, tanto en la propiedad del cliente, como haciéndonos cargo nosotros en un terreno propio.  Puede optar por cualquiera de las dos. Por lo general, el cliente lo que opta es que nosotros le armemos infraestructura en su patio y poder manejarla él.  ¡Gracias! ¡Gracias! ¡Gracias! Ok, podemos hacer dos tipos de planes, ¿no?
+
+11:03 - Fabio Arias
+  Un plan que es para tu hogar, ¿no? Así le llamamos el plan hogar, ¿no? O plan de local, ¿no?  Que vos tengas algo. ¿Qué pasó?
+
+11:14 - Fusa Labs (labsfusa@gmail.com)
+  Eso ya es netamente modelo de negocio, digamos, reglas de negocio, lo que vos estás diciendo. Sí, pero estoy hablando con él.
+
+11:23 - URSMOKED
+  Claro, sí, No, no, sí, también te digo.
+
+11:26 - Fusa Labs (labsfusa@gmail.com)
+  Avanzo con mostrarle esto para que vos agregues algo, Santi, si haga falta. O corrijas algo si hace falta. Bien.  Es una presentación, Carmen, yo, en base a todas las llamadas que tuvimos y al MVP que estuvimos armando.
+
+11:40 - URSMOKED
+  Perfecto.
+
+11:41 - Fusa Labs (labsfusa@gmail.com)
+  Básicamente son las tres secciones importantes de la plataforma, que sería Mi Cultivo, el Marketplace y el Foro Comunitario. Bien.  De base, eso es lo importante. ¿A quién resuelve qué? Los entusiastas de la hidroponía usan hojas de cálculo cuaderno.  No creo que Existe una plataforma que combina tracking técnico profesional, más marketplace entre cultivadores, más comunidad de conocimiento especializado.  Y acá hay tipo tres perfiles de personas. El novato curioso, recién empieza, sin inversión, necesita educación, herramientas visuales y bajo riesgo para dar sus primeros pasos.  El próximo es el GROW metódico, cultivador serio y preciso, requiere tracking técnico de PH y S, historial completo y reportes exportables.  Emprendedor, ¿quiere monetizar su expertise? Marketplace seguro, reputación medible y comunidad activa para posicionarse. Esperá ahí, Adri, esperá ahí.
+
+12:36 - JP
+  A partir de paso, justo como lo tenemos acá a Santiago, le preguntamos si es que faltaría un perfil ahí para entender qué otro tipo de usuario usaría la plataforma.
+
+12:49 - URSMOKED
+  No sé si sería para algún tipo de usuario distinto, me gustaría enfatizar lo que es el perfil de los términos y condiciones, porque va a ser donde nosotros actualicemos toda la norma.
+
+13:04 - JP
+  O sea, un perfil unificado que tenga que ver con estos tres tipos de personas, o sea, que sea una persona que tenga actualizado su legajo legal, o no sé cómo se diría en este caso, y alguna característica.
+
+13:19 - URSMOKED
+  Nosotros haríamos el trabajo de llevar los expedientes al día, él tendría que poder ver reflejado todo y descargarlo llevado al caso.  Dame un segundo, ¿no?
+
+13:28 - Fabio Arias
+  Lo que él quiere es que nosotros enfaticemos en la parte de base de términos y condiciones para que el usuario final, cliente en este caso, ¿no?, acepte esos términos y condiciones y nosotros tengamos un papel legal que nos proteja en cualquier tipo de percance, ¿no?  Entonces, en los términos y condiciones tendríamos que poner ahí que la privacidad es absoluta, que nos reservamos el derecho a admisión, que en ningún momento se hacen transacciones.  ...discrecionales adentro de la plataforma, siempre se usa una funcionalidad de tokens y que los planes siempre son privados de two-a-two, ¿no?  O sea, de persona a persona o de one-to-one. Eso estoy pensando, ¿no? Tiene que estar también el nombre de él y de los dueños de este caso, la empresa.  ¿Vos sos el único dueño?
+
+14:25 - URSMOKED
+  No, en realidad, lo que nosotros hicimos acá fue un malabar burocrático. Yo, en realidad, no soy propietario de la ONG.  OK. ¿Querés comentarnos algo de eso?
+
+14:35 - Fabio Arias
+  ¿Cómo se manejan ustedes legalmente? ¿Cómo lo...? Funciona de la siguiente manera.
+
+14:40 - URSMOKED
+  Las ONG tienen autorizados hasta 150 pacientes para administrar su cultivo.
+
+14:48 - Fabio Arias
+  ...con terreno propio, ¿no?
+
+14:50 - URSMOKED
+  Nosotros integramos dentro de ese cinturón básico de 150 participantes lo que son 150 cultivadores solidarios. ... ... ... Que todavía no está completa la tasa, pero es el objetivo.  Cada cultivador solidario a su vez tiene asociado tres pacientes que no tienen cultivo. Bien. Y esos tres pacientes que no tienen cultivo únicamente acceden al cannabis a través de sus cultivadores solidarios, más no de la ONG.  Excelente. Bueno, buen sistema. Eso nos permite poder hacer envíos por correo a través de los cultivadores solidarios, poder ampliar el margen legal de 150 personas a 450.  Bien. Nos permite poder llevar un seguimiento de lo que van a hacer los integrantes de la ONG, que van a estar añadidos como socios pagos, pero en realidad van a terminar haciendo la tarea de ser un escultivo en el material de la ONG.  Ok. Y a su vez, nosotros podemos cobrar. Por nosotros me refiero. A mí como el director del área de...  Investigación, Desarrollo y Tecnología. A Gustavo Alejandro Pérez, como el Director de Infraestructura y Producción. Ok. Como otros integrantes como Director de Área de Marketing y Finanza.  ¿Y en el sistema vos querés que la liquidación solamente lo manejen ustedes?
+
+16:20 - Fabio Arias
+  ¿O querés que el sistema maneje también la liquidación? Para mí lo recomendable es que la liquidación lo manejen ustedes, ¿viste?
+
+16:26 - URSMOKED
+  Sí, gustaría armar un sistema para el tema de todo el seguimiento contable, pero me gustaría que esté aparte de este integrado que puede llegar a...
+
+16:38 - Fabio Arias
+  Sí, sí, tiene que ser personal para vos, para tener vos tu propio seguimiento, ¿no?
+
+16:43 - URSMOKED
+  Sí, sí, eso tendría que operarlo un contador en colaboración con el tesorero de la ONG. Ah, bien. Bien, bien.  Importante eso.
+
+16:58 - Fabio Arias
+  Seguido madre, no sé.
+
+17:02 - Fusa Labs (labsfusa@gmail.com)
+  Ok, no, era esto, hermano, a ver, un segundo, ah, voy a sentar, así que yo en teoría soy director de Investigación y Desarrollo, a mí la ONG me contrata particularmente, en lo que son los trabajos, ¿no?  Así va a figurar ante el IPJ, ante el ARCA, ante el Ministerio de Salud, etcétera, etcétera.
+
+17:25 - URSMOKED
+  Ante el PJ. Y PJ.
+
+17:29 - Fusa Labs (labsfusa@gmail.com)
+  Bueno, después viene la parte de la economía del producto, digamos, que sería el sistema de token. Bien. La moneda virtual interna, central al modelo del producto.  Esto es, por ejemplo, regla de la economía. Esto no es lo, lo, lo, lo verico. Esto deberías, deberíamos gestionarlo entre todos y con tiempo y varias reuniones vamos a definir bien todas las reglas de negocios, pero es más o menos esto.  Y ahora rijal, ... Gracias. Token no registrarse, saldo inicial garantizado, compra en Marketplace, Bayer pierde token, o sea que si vos gastas se te descuentan los tokens, una venta en Marketplace hace que el vendedor gane tokens, y una reserva de eventos hace que se descuente en tokens, y solo el administrador o el super admin puede agregar tokens manualmente.  Bien. Restricciones críticas, por ejemplo, si los tokens nunca pueden ser validados en tokens negativos, las transacciones son atómicas, todo o nada, no hay transferencias directas entre usuarios, ni reembolsos automáticos, no requiere intervención.  Pregunta estratégica abierta, ¿el sistema de tokens es suficiente o necesita integración con dinero real?
+
+18:51 - URSMOKED
+  No, el sistema de tokens es suficiente, porque le cargaría al super admin al momento de pagar la cuota a sus 300 tokens mensuales, por ejemplo.  No, lo deje Realmente trabajaba
+
+19:01 - Fusa Labs (labsfusa@gmail.com)
+  Y se puede llegar a ser automático, por ejemplo, que cuando vos recibas, cuando la ONG reciba el pago de la suscripción mensual, se le acrediten los tokens.  Ah, estaría bueno eso.
+
+19:11 - URSMOKED
+  Por ejemplo. Pero algo así es más o menos lo que vos tenés pensado, ¿no? Sí, exactamente. A partir de esos tokens, ellos desarrollen toda su actividad dentro de la plataforma sin intercambio de ningún tipo de moneda.  Claro. Bien.
+
+19:27 - Fusa Labs (labsfusa@gmail.com)
+  Avanzamos. Esto no, esto es más de base de datos. Autenticación y onboarding. Bueno, acá hay algunas páginas. Página de login, página de registro, listado de los cultivos, formulario de bitácora semanal, detalle del cultivo, explorador de productos, carrito flotante, mis ventas, mis compras, mis ventas.
+
+19:54 - JP
+  Sí, compras y ahorita tendrías que cambiar esas palabras. Sí, creo que lo que nosotros...
+
+20:00 - URSMOKED
+  Lo que habíamos puesto en la prueba piloto que habíamos hecho en el verano con Adri, había sido canjes. Mis canjes, estaría mucho mejor.  ¿Cómo? Canges. En la prueba piloto que hicimos nosotros de la página con vos en el veranito. Ah, mis canjes, claro, claro, claro.
+
+20:17 - JP
+  Cancar tokens por algo.
+
+20:19 - Fusa Labs (labsfusa@gmail.com)
+  Ok, perfecto. Bueno, eso es cosas que vamos a ir avanzando. Esto seguramente va a quedar súper viejo. después el foro comunitario, el listado de posts, detalles del post y crear un post.
+
+20:33 - URSMOKED
+  Perfecto.
+
+20:35 - Fusa Labs (labsfusa@gmail.com)
+  Como te digo, como les digo a todo esto, no va a lo único. Seguramente faltan un montón de pantallas, un montón de páginas y eso se va a ver en desarrollo.  Esto es más extra, digamos. Esto también, registro y onboarding el camino completo desde que el usuario llega por primera vez.  Página de login, clic en registrarse, ingresa a equidato. Acá, por ejemplo, está username, password y mail. Gracias. Gracias. Bien.  Acá falta que haga el pago, por ejemplo, y ahí se asignan los 100 tokens. Y así como esta lógica que primero X, después Y, después Z, deberían haber un montón de lógicas, digamos, así con respecto a los diferentes procesos.
+
+21:15 - URSMOKED
+  Claro, por ejemplo, yo antes de dejar que el usuario pueda intervenir dentro de la plataforma, tengo que tenerlo registrado y autorizado.  Claro, claro.
+
+21:28 - JP
+  Sí, eso es.
+
+21:30 - URSMOKED
+  Estaría bueno, hay un periodo de espera.
+
+21:34 - Fusa Labs (labsfusa@gmail.com)
+  Acá dice, por ejemplo, mira, sistema envía link de verificación del email, redirige a mi cultivo con banner de verificación inactivo, después aparece activo, usa la navega con funcionalidad parcial, no puede publicar ni postear hasta que no activa su cuenta, clic en el link del email, email verify, igual a true, y ahí desaparece el banner y tiene la función.  Bien, agregar. Bien, me gustaría agregar.
+
+22:00 - URSMOKED
+  que obtenga la funcionalidad completa tiene que darle autorización a algún admin, gestir una doble verificación, la del mail y la del admin.  ¿Y la de qué? la del admin?
+
+22:13 - Fusa Labs (labsfusa@gmail.com)
+  Claro. Claro, y la de un administrador.
+
+22:14 - URSMOKED
+  Entonces nosotros le damos el click a autorizado únicamente cuando tenemos autorizado el expediente interno.
+
+22:23 - Fusa Labs (labsfusa@gmail.com)
+  Perfecto, avanzamos. Esto no es relevante, esto tampoco. Bueno, acá están los roles que yo me imaginé que serían los de Alex.  No autenticado, no verificado, verificado, admin y superadmin.
+
+22:43 - URSMOKED
+  Bien.
+
+22:45 - Fusa Labs (labsfusa@gmail.com)
+  Después ya en la etapa de desarrollo se va a ver bien el experimento que es lo que necesitas bien y en base a eso se va a crear o eliminar usuarios, digamos, o permisos o niveles de acceso.  Gracias. Gracias. Gracias. Buenísimo. Estas son métricas, digamos, de lo que sería importante medir en una plataforma como esta. Son todos datos fiscicios, obviamente, retención semanal, transacciones por mes, post por semana, tokens en circulación, del email de verificación y el tiempo de uso de la plataforma por usuario.  Bien. Esto no. Esto tampoco. Y bueno, ahí ya está todo. Eso era básicamente la info que tenía yo, Santi, sobre lo que habíamos hecho.  Está más o menos. Está súper claro. Recontra directo a lo que necesitamos, sí.
+
+23:41 - JP
+  Bueno, básicamente a esa presentación estaría bueno que en las próximas reuniones vayamos detallando, así como vimos un puntalloso hoy, ir deteniéndonos en grupos de pantalla, digamos.  Adri, muteate, por favor. La ruta del cliente en la navegación de esta herramienta, ¿me entendés? Yo igual lo digo muy así descriptivamente también de paso, porque como tenemos el Fathom, que es el que va registrando esto, entonces a nosotros nos ayuda después para poder hacer un relevo de la reunión y poder entender mejor cómo realizar estos primeros pasos, ¿no?  No sé si Fabio, vas a decir algo? A ver, te voy a preguntar algo así preciso.
+
+25:00 - Fusa Labs (labsfusa@gmail.com)
+  Mientras hablás, le comparto pantalla. Perfecto. Ok.
+
+25:06 - Fabio Arias
+  Che, te pregunto, ¿no?
+
+25:08 - URSMOKED
+  Dime.
+
+25:11 - Fabio Arias
+  Esto es una demo, pero ¿en cuántos meses vos querés que esté este sistema?
+
+25:19 - URSMOKED
+  Yo tengo ya pagado todo lo que son los trámites administrativos, burocráticos y los honorarios del abogado para dar de alta la ONG y lo único que estoy esperando es tener una oficina.  Ok. Así que... A nosotros nos puede tomar... ¿Tiempos del Estado en responder esto o dos o tres meses se demoran?
+
+25:38 - Fabio Arias
+  No, lo que nos va a tomar a nosotros, si somos tres desarrollando, dos, puede ser que no tome tres meses en terminar el proyecto.  No te voy a mentir porque la verdad es que tenemos que hacer tanto el fronte, el backend, la base de datos, los servicios en la nube, levantarlo, el dominio.
+
+26:00 - URSMOKED
+  Comprar el dominio, ¿no?
+
+26:03 - Fabio Arias
+  Y nada, armar las funcionalidades, las interacciones, el balanceo de carga, cuántos datos va a aguantar. Hay que mejorar el diseño de experiencia de usuario, el diseño de interfaz de experiencia.  No va a tomar un tiempo, pero de hacerlo lo vamos a hacer, ¿viste? Bien.
+
+26:26 - URSMOKED
+  Quiero dar una probabilidad de que en cuestión de tiempo, ustedes pueden trabajar con la mayor soltura que deseen. Porque de acá a tres meses, ponele, tenemos las aprobaciones dadas.  Claro. Ahora, si prueben estos expedientes, nosotros dependemos, necesitamos. Tener una oficina administrativa, tener un sector habilitado por el cultivo y tener los primeros clientes a la espera de la inscripción.  Con los clientes contamos, el sector de cultivo está hecho, tenemos el material genético para arrancar a trabajar, todo. Pero a mí las luces me llegan el 29.  Todavía no hemos empezado a hacer nada. Las plantas demoran en crecer. Vamos a laburar con fotoperiódicas, se van a hacer tareas de vegetación en un primer paso.
+
+27:13 - Fabio Arias
+  Santi, todo eso detalle, Santi, tenemos que agregarlo en el detalle de cada planta que la persona va a contratar, ¿no?  ¿Cuánto tiempo toma la fotoperiódica? ¿Cuánto tiempo toma las automáticas? ¿Cuánto tiempo toma crecer algo natural sin tener un índole?  Tendríamos que hacer todo un detalle técnico, una ingeniería de requerimientos para ver los alcances.
+
+27:44 - URSMOKED
+  Tengo en realidad unas planillas de seguimiento que son las que utilizo para el relevamiento de las plantas. Si quieren, armo un drivecito, les mando todo junto.  Por favor.
+
+27:54 - Fabio Arias
+  Tendríamos que hacer una ingeniería de requerimientos para ver los alcances y los límites.
+
+28:00 - Fusa Labs (labsfusa@gmail.com)
+  De la del sistema viste para ver hasta dónde alcanza y cuáles son los límites que va a tener tu sistema operativo decime quiero hacer un comentario por tipo para que entienda el Santi a Fabio cuando dice alcance y límites se refiere a por ejemplo si hay una página específica que vos necesitas para la del cultivo o para especificar qué cultivo tenés bueno quizás todas esa esa información que solamente vos hablamos vez o de la la información de cada cultivo o de los la documentación interna que por ahí vos necesitas para para manejar las cosas que que campos tienen que tener x y y o z entonces fíjate te doy un ejemplo para que entiendas con otro cliente que una una dentista por ejemplo yo casi me hice dentista haciéndole su plataforma entender entonces es eso y  Nosotros tenemos que saber prácticamente todo lo de tu negocio para poder transmitir eso a la plataforma, ¿sí? Uno es eso.  Y otro, este... A ver, se me fue lo que te iba a decir lo otro. Yo, mientras vos pensás eso, yo le agregaría a lo que dijo Fabio.
+
+29:24 - JP
+  O sea, en realidad es una pregunta que aparte de este servicio que nosotros podemos armar sin ningún problema, ¿Vos necesitarías también el servicio de lo que es el diseño o el marketing de lo que va a ser esta plataforma?  ¿O simplemente vos necesitas la plataforma limpia con un diseño sobrio y nada más? No, con la plataforma limpia yo creo que me alcanzaría.
+
+29:48 - URSMOKED
+  Ya después todo lo que es marketing se deriva con otro departamento y tampoco es como que necesitamos mucho. Ya hemos trabajado con distintas asociaciones civiles, con distintos cultivadores.  ¿Vale empezar esperanzas Entonces, tenemos el mercado ya bastante sólido. Ok.
+
+30:05 - Fabio Arias
+  Hablando de esto del alcance y límite, nuevamente, ¿no? Te voy a dar un ejemplo más gráfico del alcance. El alcance, te doy un ejemplo, ¿no?  Zoom. Acá el Mint, el Mint de Google, ¿cuál es el alcance? El alcance son las videollamadas y los usuarios.  Los límites, puede ser un límite de una hora, ¿viste? Cuando pasa mucho el Mint, el límite es una hora si es gratis.  Bien. Y vos pagás el Premium, tenés límite y limitado. Bien. Ahí es la diferencia entre alcance y límite, Bien, alcances que nosotros tendríamos.
+
+30:38 - URSMOKED
+  Básicamente, nosotros nos ocupamos de todas las tareas respecto al cultivo. Alcance, cultivo, claro. Mano de obra, mano de obra, ¿no?  Seguimiento mano de obra. Lo primero que hace el equipo cuando llega es un muestreo de las plantas que tiene el cliente actualmente, si es que las tiene, un relevamiento del suelo y un relevamiento del espacio.  Físico, se toman medidas, se ve la calidad de la arcilla, del humo, de... Claro, el... Usando... El espacio de trabajo, claro, la integración del espacio de trabajo...  Metodologías de cultivo para entender más o menos qué es lo que está haciendo, si está nutriendo con sales minerales, si nutriendo con orgánicos, si no está nutriendo, cuánto hace el riego...
+
+31:24 - Fabio Arias
+  Eso también podemos poner una acechón, ¿no? Metodologías de cultivo y que la persona elija qué metodología de cultivo quiere, así vos lo tenés todo detallado...  No, tú usas hidroponía.
+
+31:36 - URSMOKED
+  Claro. Luego del relevamiento ese, el equipo se lleva las muestras que tomó y las analiza. Entonces yo, a partir de ahí, largo informes de calidad de suelo, contenido de canabinoides en flor, volumen de flor y todo lo que sea pertinente a la calidad de las muestras tomadas, tanto de la planta como del entorno.
+
+32:00 - Fabio Arias
+  Ok, ahí voy a entendido más. ¿Cómo vamos a separar los módulos? ¿Cuál va a ser el alcance de cada módulo?
+
+32:05 - URSMOKED
+  ¿Y cuáles son los límites? Luego, en los estudios, se llega nuevamente al terreno del cultivador, con los estudios en mano, los analitos hechos, las medidas tomadas y se le plantea un plan de infraestructura.  Claro, un límite puede ser, ¿no?
+
+32:21 - Fabio Arias
+  El periodo que toma el análisis, el periodo que toma la mano de obra de ir y plantar y hacerle todo el tratamiento a la tierra.  Son diferentes tipos de límites y el alcance, ¿viste?
+
+32:33 - Fusa Labs (labsfusa@gmail.com)
+  Fabio, ahí por lo que está diciendo Santi también, perdón por los perros, estoy acá afuera, ahí por lo que está diciendo Santi también estoy pensando.  Él en cada paso de interacción necesita documentación, por ejemplo. Entonces, usar la plataforma para facilitarle la documentación en todos los pasos y de todos los actores involucrados en el trámite burocrático sería fantástico.
+
+32:59 - URSMOKED
+  Buenísimo. Gracias. Gracias. Gracias.
+
+33:00 - Fusa Labs (labsfusa@gmail.com)
+  No sé qué te parece, Santi, y también ahí necesitamos especificaciones, viste, nuevamente, qué tipo de documento, cómo lo usás, cómo tiene que ser, hay algo que necesitas y así que tengas, entonces nosotros debemos de poder facilitarle a todas las partes de que puedan hacer con un botón, por ejemplo, ¿entendés?  Un documento. Ok.
+
+33:20 - URSMOKED
+  A lo que se me ocurre es que puedo, en el drive este que le voy a pasar, prepararle una copia de cada uno de los documentos que yo uso para que puedan verlo más a detalle, por si es que se me escapa algo.
+
+33:31 - Fusa Labs (labsfusa@gmail.com)
+  Y otra cosa, Santi, eso era lo que quería decirte hace unos minutos y se me quedé en blanco. Nosotros, meses anteriores, cuando nos reunimos para hacer esto, para hacer el MVP, que conversamos una gana sobre tu proyecto.
+
+33:47 - URSMOKED
+  Sí, estuvimos noches y noches.
+
+33:51 - Fusa Labs (labsfusa@gmail.com)
+  Vos me dijiste que vos ocupás máquinas, sí, máquinas, básicamente, para... Para medir, digamos, el THC, los sensores de la planta, o sea, todo el ciclo de vida vos tenés ahí sensores de todo tipo midiendo la planta, ¿no?  Sí, ¿cuál es el tema?
+
+34:11 - URSMOKED
+  La mayoría de estos equipos se pueden comprar equipos nuevos y automáticos, que esto te lo cargan en documentos automáticamente, pero yo estoy usando cosas así, mira.  El siguiente paso sería, ¿no?
+
+34:29 - Fabio Arias
+  Vos tenés tu prototipo ahí, mejorar ese prototipo, hacerlo beta, subirlo a render para que él interactúe, ¿no? Y tenga algo sólido para verlo.  Esto, por ejemplo, es un refractómetro de masa, que es analógico.
+
+34:44 - URSMOKED
+  Entonces, yo los resultados que obtengo con el equipo este tengo que después desplegarlos en un documento a mano. Ok.  Ah, ¿todo a mano lo hacés? Claro, la mayoría de los equipos son así, a mano. Tendríamos que hacer un módulo especial para él, ¿viste?
+
+34:58 - Fabio Arias
+  Donde él puede cargar todos los...
+
+35:00 - URSMOKED
+  ¿Los datos de su investigación o qué pasó?
+
+35:04 - Fusa Labs (labsfusa@gmail.com)
+  Claro, sí, que eso, en ese momento en que yo te había dicho, yo la verdad que incluso ahora desconozco bastante el tema hardware, que eso sería lo que vos estás diciendo, hardware, y para que sea óptimo se podría mezclar, digamos, y ahora nosotros tenemos la posibilidad de que tenemos una persona que es ingeniero electromecánico, entonces por ahí puede, podemos pensar de qué manera mejorar el producto para integrar el hardware que vos ocupes en tus instalaciones, viste, por ahí eso capaz que te va a arreglar la inversión.
+
+35:46 - Fabio Arias
+  Para mí un poquito más adelante eso. ¿Cómo? Para mí un poquito más adelante eso. Claro, más adelante. Al comienzo podríamos ponerle como casillas a él para que él introduzca los datos y esos datos.  ...vayan a una ficha técnica, esa ficha técnica lo pueda descargar en un Excel y pueda mostrarle a sus compañeros y que vayan mostrándole cómo funciona el sistema, le vamos a hacer una beta, le vamos a subir a render, él va a ir cargando datos reales con la cosa que él usa para trabajar y así vamos adquiriendo más datos y vamos mejorando la ficha técnica y también vamos a incorporar esa ficha técnica a la descripción del paquete de los productos, ¿no?  ...del paquete, no sé, de la cookie. ¿Cómo puedes hacer florecer tu cookie? ¿Cómo puedes hacer florecer tu gorila glue?  ¿Cómo puedes hacer florecer, no sé, tu orange? Y así, no sé qué está fumando, seguramente una purple. ¿Cómo se florece tu purple?  Y estas son las fichas técnicas que sacó nuestro técnico, ¿cómo sería? Sería técnico botánico, ¿no? Serías eso, ¿no? Como técnico botánico.  Nuestro técnico botánico y que te muestra así los resultados de las cosas que él tiene de los aparatos, y ahí te muestra, que compadre, mirá, esta Kuki tiene estos resultados, esta Gorilla Glue tiene estos resultados, esta Orange tiene este resultado.
+
+37:15 - URSMOKED
+  Tengo un experimento que tiene unos analitos, está adentro, te los puedo mostrar.
+
+37:35 - Fusa Labs (labsfusa@gmail.com)
+  Fabio, vamos a hacerle el MVP rápido, lo más rápido posible.
+
+37:39 - Fabio Arias
+  Vamos a hacer una beta, una beta bastante para que él pueda entrar y interactuar con el sistema. Bueno, pero la beta esa que sí se va hacer en tres meses.  La beta lo vamos a hacer en un par de semanas, en dos semanas, una semana lo hacemos la beta para que él ya entre.  Y que decida si va a invertir realmente y si quiere contratarnos, le hacemos el contrato y llevamos desarrollando ya la aplicación.
+
+38:11 - Fusa Labs (labsfusa@gmail.com)
+  Perfecto, ahí había que mencionar también esa parte, la parte del contrato y del presupuesto, Santi, que tú te había comentado, viste, que lo íbamos a ver acá en la llamada, así que, nada, continuamos online, en algún momento lo vemos, antes de que termine.
+
+38:26 - URSMOKED
+  Bien, yo les muestro ahora esto, que es, por ejemplo, el informe de Canadinoides que hago yo. Sí. Alcanzan a leer bien.  Básicamente son todos los datos de recolección, después en la segunda página los resultados del estudio, que se completan en porcentaje.  Bien, ok.
+
+38:50 - Fabio Arias
+  Eso lo podemos hacer todo en un Excel y que quede guardado en el sistema como página, viste, y vos vayas guardando así y vayas viendo todos los informes y que te traiga el informe.
+
+39:00 - Fusa Labs (labsfusa@gmail.com)
+  El óptimo, el informe menos óptimo, que mejora el resultado Imaginate en el marketplace vos buscas por la que quiero hacer búsquedas por cuál tiene más THC Claro, eso puede ser, puede ser, sí Y eso dispara la venta, viste, porque está ascendente Siempre van a querer tener, capaz que algunos quieren más con CBD CBD creo que era el otro O la CDA, la CDA notificaciones Hola Fabio, tengo esta Z que tiene tanto por ciento de THC, cómprasla con tus tokens Ah, eso estaría buenísimo Viste, eso de marketing, viste, vender todos los días, tenemos que nos tener que contratar también para asesorarte en las ventas, amigo, no solamente para la plataforma Sí, estaría buenísimo, porque, bueno, vos sabrás cómo son los equipos de venta en el rubro ¿Cómo?
+
+39:55 - JP
+  Por eso sabrás cómo son los equipos de venta en el rubro por lo general y no cómo venta en
+
+40:00 - URSMOKED
+  Hay que alejarme.
+
+40:02 - JP
+  Por eso yo preguntaba si ese servicio también iba a estar interesado, porque como dijo Adri, nosotros también hacemos todo el circuito ya de lo que es una startup en todos sus aspectos, no solamente en el aspecto de software, sino también en el aspecto de venta y marketing.  Te quería preguntar, justo que mencionaron el tema de hardware también, si bien es cierto lo que dice Fabio, que por el tema sensores lo podemos ver más para adelante, sí estaría bueno que al menos nosotros te ofrecemos la posibilidad, vos podés elegir, si querés o no, de poder tener ese asesoramiento con un profesional que es justamente ingeniero y sabe de sensores, porque fue parte de su tesis el tema del tratamiento de sensores, y yo creo que es importante tener ese tema afinado, o sea, yo digo como opinión, ¿no?  No, no, no, Definitivamente.
+
+40:58 - URSMOKED
+  no, No sé si en esta instancia de ahora, pero más adelante vamos a requerir de personal con esa opción.  Claro, claro.
+
+41:05 - JP
+  No, si está bueno, yo lo dejo para el Fathom también de paso, como que lo tengas en cuenta.
+
+41:12 - URSMOKED
+  Automatizar todo lo que es el tema de las luces, la medición y regulación de la electroconductividad de las soluciones, al menos en lo que sea el área productiva mía.  No sé si la de cliente, pero la mía sí. Eso sería, ¿por qué lo digo?
+
+41:26 - JP
+  Porque, o sea, la importancia de la calidad de los datos. Ahí yo estoy hablando de eso, básicamente, de que los resultados reflejen la realidad de una manera eficiente, de una manera con exactitud y precisión, que son dos palabras que no son las mismas, exactitud y precisión.  Pero que yo creo que a la hora de ser una plataforma seria, como lo va a ser y como lo estamos pensando ya, eso es un requisito, digamos, que hay que tenerlo en cuenta.  Entonces, por suerte, nosotros también contamos con esa posibilidad para ofrecerte... Mejorar eso. Yo te iba a preguntar cómo lo manejas vos a los sensores, si vos tenés el conocimiento básico, si crees que eso es un resultado fiable que te da la herramienta, ¿cómo la ves?
+
+42:14 - URSMOKED
+  Y yo lo que sé usar son mis equipos de laboratorio únicamente. Ah, de una, buenísimo. Algo de que es automatización entiendo, pero no soy ningún tipo de experto en nada.
+
+42:24 - JP
+  No, pero ni siquiera automatización, o sea. ¿Cuál tu profesión? ti no me acuerdo. ¿Cómo?
+
+42:31 - Fusa Labs (labsfusa@gmail.com)
+  ¿Qué estás estudiando? ¿Cuál es tu profesión? Laboratorio Clínico de Histopatología estudio.
+
+42:37 - URSMOKED
+  Ahí va. Entonces yo sé lo que es el manejo de los equipos. Te manejo una centrífuga, te manejo un condensador, te manejo un refractómetro, el microscopio de pe a pa.  Pero ahora, eso integrarlo dentro de un sistema informático es bien complicado. Por lo general los equipos automatizados cuentan con un sistema propio.  Gracias. Y integrarlo con otros sistemas suele ser un dolor de cabeza.
+
+43:04 - JP
+  ¿Y otro presupuesto de ese tipo de sensores? Sí, totalmente.
+
+43:08 - URSMOKED
+  Yo, por ejemplo, uso, como el equipo que les mostré recién, este, todo manual. Y así en la misma presentación tengo lo que es medidores de pH, medidores de electroconductividad por sonda.  O se sondea y eso arroja un resultado que después de forma manual se aplica. Podés llegar a ser el primero que lo automaticen.
+
+43:31 - Fusa Labs (labsfusa@gmail.com)
+  Sería hermoso.
+
+43:35 - URSMOKED
+  Sería hermoso, vos decís que te ayudaría muchísimo, ¿no? Sí. Sobre todo para lo que son los parámetros para las plantas, porque al ser una especie exótica y tan mañosa como lo es el cannabis, necesitamos mantenernos en unos rangos bastante específicos.  Claro, a eso iba.
+
+43:51 - JP
+  A eso iba. El tratamiento de los datos es importante en este tipo de proyectos.
+
+43:56 - URSMOKED
+  Todo lo que es el procesamiento de los datos que yo tomo. Por ejemplo, no tengo problema en hacerlo en planilla.  Sí, lo que me gustaría es automatizar las lecturas y las correcciones de los datos que usamos para el control de las plantas.  Lo que es horas luz, nutrientes, añadido de soluciones, lo que es los preventivos, la sanidad, pH y electroconductividad del agua.  Pero todos esos valores sí me gustaría llevarlo a un sistema de hardware que los tenga funcionando automáticamente.
+
+44:34 - JP
+  Y además, eso cuando, digamos, se despliegue esto, que yo lo veo mucho potencial y tenga más volumen de personas utilizando la plataforma, ¿eso te conllevaría a vos un mayor trabajo o un despliegue de tiempo extra para poder registrar todos esos datos, supongo, no?
+
+44:55 - URSMOKED
+  A mí particularmente no, pero sí a mis compañeros de trabajo. claro. ¿Veis? De eso se encarga el sector producción, que es quien va y hace las visitas semanales, recabando todos los datos de producción.  Ah, ok.
+
+45:09 - JP
+  Che, Adri, yo pensé que teníamos más de una hora con este Meet, o no sé quién creó el Meet.
+
+45:16 - Fusa Labs (labsfusa@gmail.com)
+  Vos no creaste, lo creamos desde la cuenta de la empresa.
+
+45:23 - JP
+  Cualquier cosa, si se cierra, entramos de nuevo.
+
+45:26 - URSMOKED
+  No, no entramos de nuevo.
+
+45:27 - JP
+  Vale, de una, listo. Fíjense de cortar el Fathom antes, ¿no?
+
+45:34 - Fusa Labs (labsfusa@gmail.com)
+  Ok, cortemos antes de los cinco minutos y entramos de nuevo.
+
+45:38 - JP
+  Sí, así es, Santi.
+
+45:41 - URSMOKED
+  Bien.
+
+45:41 - Fusa Labs (labsfusa@gmail.com)
+  Yo creo que quedó súper claro, nos va a servir un montón esta llamada para armar lo que dijo Fabio, que es una versión beta, para que vos interactúes, vas a probando qué te parezca, qué te parece.  Y esa versión beta va a estar acompañada de un... En ese presupuesto vas a tener los tiempos de desarrollo, como planes de pago, cuánto te va a salir eso desplegado y listo para producción, súper seguro, súper profesional, con las últimas tecnologías y con metodologías de desarrollo.
+
+46:27 - JP
+  Y el canal de comunicación también, esto ya lo podemos hacer ahora, incluso después de la charla ya creamos un grupo donde van a estar las personas que van a estar a cargo del proyecto para que vos no tengas ningún problema en comunicarse directamente en ese grupo, tener cualquier duda y que nosotros también te preguntemos a vos, ya que ahora nos estamos conociendo y podamos sacarnos las dudas, preguntarte cosas, obviamente todo en un horario prudente, y ya de paso de ir avanzando también.  Kevin. .
+
+47:00 - URSMOKED
+  Bien, lo mismo si necesitan reunirse con algún otro integrante de lo que va a ser la mesa comitiva de la ONG, compañero mío del sector producción, lo que es departamento de marketing, lo que quieran.  Estamos a disposición para que esto salga pulido, prolijo y rápido. Perfecto, perfecto.
+
+47:22 - JP
+  Sí, sí, no hay ningún problema. Bien, buenísimo.
+
+47:26 - URSMOKED
+  ¿Algo más que agregar, muchachos?
+
+47:28 - JP
+  Adri, no sé si volvió, por mí está bien, ¿eh? No, por mí también. Otra cosa, ¿viste?
+
+47:36 - Fusa Labs (labsfusa@gmail.com)
+  Pensando ya en la beta que vamos a construir, que sería ideal tener toda la información en esta llamada, ¿entendés?  Que no quede nada por fuera o que haya faltado, por ejemplo, alguna información que, alguna página específica que necesites.
+
+47:55 - URSMOKED
+  No, recapitulemos. Necesito el set, la pestaña de mi cultura. Y digo, esta pestaña, hago una breve descripción de lo que se me ocurre que va a ser cada una para que lo paguen.  Vale. ¿Y qué hay dentro de cada página?
+
+48:07 - Fusa Labs (labsfusa@gmail.com)
+  Viste que tenés algunas subpáginas y por ahí podés pensar eso y unos minutos nomás, avanzamos con eso que quede grabado.  Bien. Página Mi Cultivo.
+
+48:17 - URSMOKED
+  Integra lo que es la creación de una parcela productiva para nueve plantas por socio. Entonces, cada perfil de cada socio tiene que poder crear un cultivo de nueve plantas.  Dentro de ese cultivo de nueve plantas, ellos pueden dar de alta una por una, para realizar un seguimiento individual de cada una, en el que se especifica genética, tiempo de germinado, etapa fenológica, capacidad foliar, crecimiento de las raíces, fecha, obviamente, descripción de genética, cepa y fenotipo.  Necesito poder llevarle el control del pH. ¡Gracias! Electroconductividad y tipo de sustrato. Necesito poder hacer anotaciones sobre el estado de crecimiento y adaptación de la planta al entorno en que está, que se llena de forma manual.  Y, por último, un apartado que indique si se proviene de una semilla regular, fotoperiódica, automática, feminizada, no feminizada, etcétera.  La idea es que cada uno de los usuarios pueda tener control únicamente por la parcela de nueve, pero en el panel de control de un administrador o superadministrador se ve el integrado completo de todas las parcelas de todos los usuarios para poder hacer un seguimiento desde la oficina.  Sí, un dashboard de admin.
+
+49:49 - JP
+  Bien.
+
+49:50 - URSMOKED
+  Luego está la pestaña de lo que sería el GTL o Marketplace. Esta pestaña tiene que poder integrar. ¡Ey! Ida y vueltas de productos entre la ONG, los usuarios y entre usuarios mismos, con lugar, fecha, precio, va a pactar entre ellos si la interacción se hace entre usuarios o entre ellos y la organización.  No sé si me explica. Sí, se entiende. Sí. Súper. Otra cosa. Y hay un carrito de compras que debe verse impactado en el sector de mis canjes.  Ok, un e-commerce. Sí, y el comercio de vida, estilo Mercado Libre. Estilo Mercado Libre. Sí. De una. Bien. Y los eventos.  Me gustaría que los eventos tengan una cartilla de distintos eventos, estilo la página El Pogo, donde se ven. O se va a presentar una charla sobre esquejado en, no sé, el centro.  Una agenda, ¿no? Una agenda con eventos. Claro, y que a partir de ahí ellos puedan sacar tanto la entrada para ellos o para ir más, usando gasto de tokens, o dinero real.  Ahí sí podemos hacer interacción. Para eventos, dos tipos de pagos, digamos.
+
+51:24 - JP
+  Sí.
+
+51:28 - URSMOKED
+  ¿Qué más? de la participación es que después eso los voy a derivar con lo que es sector legales con mi abogado, para que él pueda decirles bien la normativa que tenemos que cumplir específica.  Pero básicamente tiene que ser una plantilla sin interacción que marque los términos de condiciones de uso de la página para estar limpios de cualquier cagada que se mande.  Porque alguna se lo manda. Sí. La parte de...
+
+52:02 - Fabio Arias
+  El foro.
+
+52:03 - URSMOKED
+  El foro tiene que tener distintas pestañas y tiene que tener dos vistas distintas al menos, la de administrador y la del usuario, porque nosotros tenemos que poder regular los posteos que incumplan con las normas y condiciones.  Claro. Tiene que haber un sector de charlas, uno de clases, uno de temas que puede abrir la comunidad y tienen que poder ellos abrir su propio directorio de temas dentro del foro.
+
+52:35 - Fabio Arias
+  Excelente.
+
+52:38 - JP
+  Poco más que eso, que se pueda cargar video, que se pueda cargar imágenes, que se pueda cargar archivos.
+
+52:43 - URSMOKED
+  Ok.
+
+52:46 - Fabio Arias
+  ¿Querés que hablemos un poco de la remuneración y el honorario? ¿Cómo vamos a armar el contrato? Perfecto.
+
+52:54 - URSMOKED
+  Me encantaría. Ok.
+
+52:58 - Fabio Arias
+  Estoy pensando... Si es un e-commerce, podríamos hacerte lo honorario por hora, ¿no? Vamos dividiendo la hora entre nosotros los programadores y también le pagamos a lo de marketing, ¿no?  Yo soy Fabio Arias, me ha presentado esto porque no me presenté, simplemente empezamos hablando.
+
+53:21 - URSMOKED
+  Yo soy Fabio Arias, trabajo hace 6 años en la industria del desarrollo de software.
+
+53:27 - Fabio Arias
+  Empecé trabajando como independiente, después me contrataron como talento académico en Coder House, trabajé 5 años, después empecé a trabajar en Fort Latam, trabajé 3 años.  Después empecé a trabajar en diciembre como líder técnico en una consultora jurídica, MF. Tiene una sede en Buenos Aires y otra sede en Córdoba.  Soy técnico universitario en programación. Soy líder técnico multidisciplinario. Este es un equipo mío, tengo otro equipo y otro equipo.  Y nada, fui 200 mucho tiempo, ahora estoy 100% a cargo de equipos técnicos, ayudando a los chicos a salir adelante.  Siempre me encargo de los contratos, ya dos y la última etapa ya, así que cuando el cliente está hasta el final, me ve.  Soy señor, ¿no? Yo cobro 50 dólares la hora, 50 dólares la hora, pero como obviamente vos, amigo Adrián, no te vamos a cobrar 50 dólares la hora, pero sí son 20 dólares lo que cobra un junior, porque los chicos, obviamente, no tenemos que repartir la hora para que no haya una carga mental tanto, ¿no?  Porque, digamos, somos tres desarrolladores o dos desarrolladores. Sí, lo que digo.
+
+55:00 - URSMOKED
+  Estar programando código a las 3 de la mañana y es un doloroso, así que los entiendo.
+
+55:07 - Fabio Arias
+  Pero sí te vamos a dar resultado toda la semana, todos los días va a haber una nueva actualización, una nueva future, va a haber funcionalidades, vas a estar con nosotros programando, o sea, bueno, no programando, pero vas a entrar en el código, vas a tener acceso con las credenciales, vas a poder ver el código fuente en GitHub, vas a poder ver las betas, vas a poder interactuar, vas a estar con nosotros en las daily técnicas, porque vamos a hacer, vamos a pactar un calendario para el seguimiento del producto del desarrollo y que vos estés actualizado, ¿no?  Seguramente vamos a tratar con vos y si querés, también podemos hablar con alguna otra persona que trabaje con vos, así nos presentamos, ¿viste?  También podemos hablar con tu abogado y hablo con él, le muestro un prototipo de contrato que yo tengo, vamos a hacer las modificaciones correspondientes, ¿viste?  ¿viste? Y vamos a ajustar tanto las cláusulas de apertura y de cierre, ¿viste?
+
+56:05 - Fusa Labs (labsfusa@gmail.com)
+  Porque cláusula 1, cláusula 2, no sé, cláusula Había oído que lo de la propiedad intelectual del código también era que algo había hablado yo con Santiago, y nada, no sé si pudiste preguntarle vos a tu abogado sobre eso.
+
+56:18 - URSMOKED
+  En el contrato tengo una parte de la consultiva, pero todavía no tengo respuesta. Ok.
+
+56:24 - Fabio Arias
+  Igual, la propiedad intelectual va a quedar con nosotros, pero el desarrollo es tuyo, no entendemos, sea, de ustedes.
+
+56:32 - URSMOKED
+  acuerdo a quien corresponde? Claro, va a quedar a Fusa Labs porque nosotros lo desarrollamos.
+
+56:41 - Fabio Arias
+  A ver, no son programadores, no van a programar, pero sí van a poder usar el código si ustedes quieren añadir otros programadores.  Digamos que en un futuro nosotros dejamos de trabajar con ustedes, ustedes siguen teniendo la plataforma, ya el código va a estar con una arquitectura.  Sólida, con patrones de diseño, desplegado, y cualquier programador que ustedes contraten va a poder entrar a programar en el código sin que nosotros estemos, porque el código tiene que ser legible, el código limpio, el famoso código limpio.
+
+57:17 - JP
+  Perdón que te interrumpa, esto es re importante encima de lo que estás diciendo, pero quería aclararlo del tema del MIT que se va a cerrar, no sé si ya se está por cerrar o no, y eso había que cerrar el Fathom.
+
+57:27 - Pedro Enriquez
+  Quedan tres minutos.
+
+57:29 - JP
+  Ah, bueno, podríamos cortar y entrar de nuevo, aunque sea que falten diez minutos. Sí, para cerrar más tranquilos en otro MIT.
+
+57:40 - URSMOKED
+  ¿Crea vos, Adri?
+
+57:41 - Fusa Labs (labsfusa@gmail.com)
+  No, Jesús, ¿qué crea vos?
+
+57:44 - JP
+  Bueno, creo ahí y le mando al grupo y pásenle a ustedes a Santi. Dale. Cierran bien el Fathom, cierran bien el Fathom, por favor.  Ahí cierro, espera un ratito.
