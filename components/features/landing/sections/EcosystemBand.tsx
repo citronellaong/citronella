@@ -8,7 +8,7 @@ export const EcosystemBand = React.forwardRef<HTMLElement, {}>((props, ref) => {
     <section ref={ref} className="relative py-20 border-y border-lime-400/10 overflow-hidden z-[2] bg-[#07120b] gpu-section">
       <AnimatedOrb className="top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] blur-[120px]" color="rgba(163,230,53,0.06)" />
       <div className="relative max-w-5xl mx-auto px-6 text-center">
-        <p data-eco-word className="text-sm tracking-[0.3em] uppercase text-lime-400/60 mb-8">Un ecosistema completo</p>
+         <p data-eco-word className="text-sm tracking-[0.3em] uppercase text-lime-400/60 mb-8">Nuestro compromiso</p>
         <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
           {ecosystemWords.map((w) => (
             <span

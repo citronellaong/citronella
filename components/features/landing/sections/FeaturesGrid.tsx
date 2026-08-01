@@ -2,7 +2,6 @@ import React from 'react';
 import { BgImage } from '@/components/shared/BgImage';
 import { AnimatedOrb } from '@/components/shared/AnimatedOrb';
 import { avigea } from '@/lib/fonts';
-import { features } from '../data';
 
 export const FeaturesGrid = React.forwardRef<HTMLElement, {}>((props, ref) => {
   return (
@@ -14,15 +13,71 @@ export const FeaturesGrid = React.forwardRef<HTMLElement, {}>((props, ref) => {
 
       <div className="relative max-w-6xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 data-feat-title className={`${avigea.className} text-5xl sm:text-6xl font-normal tracking-tight text-white mb-4`}>
-            Todo lo que necesitás, <span className="text-lime-400">en un solo lugar</span>
+          <h2 data-feat-title className={`${avigea.className} text-4xl sm:text-5xl font-normal tracking-tight text-white mb-4`}>
+            ¿Qué es <span className="text-lime-400">Citronela?</span>
           </h2>
           <p data-feat-title className="text-zinc-400 text-xl">
-            Herramientas potentes, interfaz simple. Diseñado por cultivadores, para cultivadores.
+            Una asociación civil que combina ciencia, legalidad y solidaridad para que el cannabis medicinal sea accesible, seguro y transparente.
           </p>
         </div>
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((f) => (
+          {[
+            {
+              icon: '⚖️',
+              title: 'Marco Legal',
+              desc: 'Operamos bajo la Ley 27.357 con gestión completa del REPROCAN. Tu membresía tiene respaldo institucional y jurídico.',
+              gradient: 'from-lime-300 to-green-600',
+              glow: 'rgba(163,230,53,0.3)',
+              border: 'border-lime-400/15 hover:border-lime-400/40',
+              bg: 'bg-lime-400/10 group-hover:bg-lime-400/25',
+            },
+            {
+              icon: '🏛️',
+              title: 'Sede Física',
+              desc: 'Nos encontramos en 9 de Julio 1196, Córdoba Capital. Atendimiento presencial con equipo humano que escucha tu caso.',
+              gradient: 'from-emerald-300 to-teal-600',
+              glow: 'rgba(16,185,129,0.3)',
+              border: 'border-emerald-400/15 hover:border-emerald-400/40',
+              bg: 'bg-emerald-400/10 group-hover:bg-emerald-400/25',
+            },
+            {
+              icon: '🔬',
+              title: 'Laboratorio Propio',
+              desc: 'Cada genética es analizada en nuestro laboratorio de analitos. Pureza verificada científicamente, sin sorpresas.',
+              gradient: 'from-cyan-300 to-blue-600',
+              glow: 'rgba(6,182,212,0.3)',
+              border: 'border-cyan-400/15 hover:border-cyan-400/40',
+              bg: 'bg-cyan-400/10 group-hover:bg-cyan-400/25',
+            },
+            {
+              icon: '🤝',
+              title: 'Red Solidaria',
+              desc: 'Sos parte de una comunidad donde cada cultivador alimenta a pacientes que no pueden hacerlo solos.',
+              gradient: 'from-violet-300 to-purple-600',
+              glow: 'rgba(139,92,246,0.3)',
+              border: 'border-violet-400/15 hover:border-violet-400/40',
+              bg: 'bg-violet-400/10 group-hover:bg-violet-400/25',
+            },
+            {
+              icon: '👨‍⚕️',
+              title: 'Acompañamiento Médico',
+              desc: 'Seguimiento clínico continuo con profesionales que ajustan tu tratamiento según evolución.',
+              gradient: 'from-amber-300 to-orange-600',
+              glow: 'rgba(251,191,36,0.3)',
+              border: 'border-amber-400/15 hover:border-amber-400/40',
+              bg: 'bg-amber-400/10 group-hover:bg-amber-400/25',
+            },
+            {
+              icon: '💰',
+              title: 'Membresía Transparente',
+              desc: 'Sabés exactamente dónde va cada peso. Sin costos ocultos ni sorpresas.',
+              gradient: 'from-rose-300 to-pink-600',
+              glow: 'rgba(244,63,94,0.3)',
+              border: 'border-rose-400/15 hover:border-rose-400/40',
+              bg: 'bg-rose-400/10 group-hover:bg-rose-400/25',
+            },
+          ].map((f) => (
             <div
               key={f.title}
               data-feature

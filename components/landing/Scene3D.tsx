@@ -18,27 +18,12 @@ function useWebGLSupport() {
   return supported;
 }
 
-/* ================================================================
-   MOUSE TRACKER — Shared mouse position for interactive elements
-   ================================================================ */
 function useMousePosition() {
   const mouse = useRef({ x: 0, y: 0 });
   return mouse;
 }
 
-function MouseTracker({ mouseRef }: { mouseRef: React.MutableRefObject<{ x: number; y: number }> }) {
-  const { viewport } = useThree();
-  useFrame(({ pointer }) => {
-    mouseRef.current.x = (pointer.x * viewport.width) / 2;
-    mouseRef.current.y = (pointer.y * viewport.height) / 2;
-  });
-  return null;
-}
-
-/* ================================================================
-   TRICHOME PARTICLES
-   ================================================================ */
-function TrichomeParticles({ count = 80, mouseRef }: { count?: number; mouseRef: React.MutableRefObject<{ x: number; y: number }> }) {
+function TrichomeParticles({ count = 40, mouseRef }: { count?: number; mouseRef: React.MutableRefObject<{ x: number; y: number }> }) {
   const meshRef = useRef<THREE.InstancedMesh>(null);
   const particles = useMemo(() => {
     const temp = [];
@@ -81,9 +66,6 @@ function TrichomeParticles({ count = 80, mouseRef }: { count?: number; mouseRef:
   );
 }
 
-/* ================================================================
-   SCENE: Hero — large objects, depth, mouse interaction
-   ================================================================ */
 export function HeroScene({ className = '' }: { className?: string }) {
   const mouseRef = useMousePosition();
   const webgl = useWebGLSupport();
@@ -91,41 +73,25 @@ export function HeroScene({ className = '' }: { className?: string }) {
   if (!webgl) return null;
 
   return (
-    <div className={`absolute inset-0 -z-10 ${className}`}>
+    <div className={`absolute inset-0 -z-10 ${className} pointer-events-none`}>
       <Canvas camera={{ position: [0, 0, 8], fov: 45 }} dpr={[1, 1.5]} gl={{ antialias: true, alpha: true }} style={{ background: 'transparent' }}>
         <MouseTracker mouseRef={mouseRef} />
-
         <ambientLight intensity={0.3} />
         <pointLight position={[-5, 3, 4]} intensity={0.4} color="#22c55e" />
         <pointLight position={[4, -3, 3]} intensity={0.25} color="#facc15" />
-
-        <TrichomeParticles count={60} mouseRef={mouseRef} />
+        <TrichomeParticles count={40} mouseRef={mouseRef} />
       </Canvas>
     </div>
   );
 }
 
-/* ================================================================
-   SCENE: Showcase — background depth for horizontal section
-   ================================================================ */
-export function ShowcaseScene({ className = '' }: { className?: string }) {
-  const mouseRef = useMousePosition();
-  const webgl = useWebGLSupport();
-
-  if (!webgl) return null;
-
-  return (
-    <div className={`absolute inset-0 -z-10 ${className}`}>
-      <Canvas camera={{ position: [0, 0, 10], fov: 38 }} dpr={[1, 1.5]} gl={{ antialias: true, alpha: true }} style={{ background: 'transparent' }}>
-        <MouseTracker mouseRef={mouseRef} />
-
-        <ambientLight intensity={0.2} />
-        <pointLight position={[-6, 0, 3]} intensity={0.3} color="#a3e635" />
-
-        <TrichomeParticles count={50} mouseRef={mouseRef} />
-      </Canvas>
-    </div>
-  );
+function MouseTracker({ mouseRef }: { mouseRef: React.MutableRefObject<{ x: number; y: number }> }) {
+  const { viewport } = useThree();
+  useFrame(({ pointer }) => {
+    mouseRef.current.x = (pointer.x * viewport.width) / 2;
+    mouseRef.current.y = (pointer.y * viewport.height) / 2;
+  });
+  return null;
 }
 
 export default HeroScene;

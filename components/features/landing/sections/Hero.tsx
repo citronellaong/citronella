@@ -50,10 +50,10 @@ export const Hero = React.forwardRef<HTMLElement, HeroProps>(({ textRef, phoneRe
 
       <div ref={textRef} className="relative max-w-3xl mx-auto px-6 w-full text-center z-10">
         <h1 data-hero-text className={`${avigea.className} text-6xl sm:text-7xl lg:text-8xl font-normal tracking-tight leading-[1.05] mb-6`}>
-          Cultivá tu{' '}
+          Cannabis medicinal
           <br className="hidden sm:block" />
           <span className="relative inline-block">
-            <span className="text-lime-400">ecosistema</span>
+            <span className="text-lime-400">legal, científico</span>
             <svg
               className="absolute -bottom-2 left-0 w-full h-3 text-lime-400/50"
               viewBox="0 0 200 12"
@@ -68,15 +68,15 @@ export const Hero = React.forwardRef<HTMLElement, HeroProps>(({ textRef, phoneRe
           </span>
         </h1>
         <p data-hero-text className="text-xl sm:text-2xl text-zinc-400 max-w-xl mx-auto mb-10 leading-relaxed">
-          La plataforma definitiva para gestionar tus cultivos hidropónicos. Registrá, monitoreá y hacé crecer tus
-          plantas con control total — <span className="text-lime-300 font-medium">del esqueje a la cosecha</span>.
+          Acceso legal al cannabis medicinal con respaldo científico, laboratorio propio
+          y una red de cultivadores solidarios. <span className="text-lime-300 font-medium">Tu salud, protegida por la ley.</span>
         </p>
         <div data-hero-text className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            href="/register"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe5Iqxu5JLn7YY2XDooFEpSmTkibDkc_UZq4_DiyxeFBtK50Q/viewform"
             className="magnetic-btn group w-full sm:w-auto px-8 py-4 rounded-2xl font-bold text-lg text-[#07120b] bg-gradient-to-r from-lime-400 via-green-400 to-emerald-400 hover:shadow-[0_0_40px_rgba(163,230,53,0.5)] hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2"
           >
-            Comenzar ahora{' '}
+            Postulate como paciente{' '}
             <svg
               className="w-5 h-5 group-hover:translate-x-1 transition-transform"
               viewBox="0 0 24 24"
@@ -93,7 +93,7 @@ export const Hero = React.forwardRef<HTMLElement, HeroProps>(({ textRef, phoneRe
             href="/login"
             className="w-full sm:w-auto px-8 py-4 rounded-2xl font-semibold text-lg text-zinc-200 border border-zinc-700 bg-zinc-900/40 backdrop-blur-sm hover:bg-zinc-800/60 hover:border-lime-400/40 hover:text-lime-300 transition-all duration-300"
           >
-            Ya tengo cuenta
+            Conocé nuestro modelo
           </Link>
         </div>
         <div data-hero-text className="mt-14 grid grid-cols-3 gap-4 max-w-md mx-auto">

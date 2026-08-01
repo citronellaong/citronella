@@ -448,3 +448,24 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(163, 230, 53, 0.30);
 }
+/* Mobile scroll fixes */
+@media (max-width: 768px) {
+  .gpu-section {
+    content-visibility: unset;
+    contain-intrinsic-size: unset;
+  }
+
+  .fixed.inset-0.z-0.pointer-events-none {
+    position: relative;
+    background-attachment: scroll;
+  }
+
+  body {
+    overscroll-behavior: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

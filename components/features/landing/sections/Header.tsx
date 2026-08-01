@@ -10,7 +10,7 @@ export const Header = React.forwardRef<HTMLElement, {}>((props, ref) => {
         <Link href="/" className="flex items-center gap-0.5 group">
           <div className="relative w-14 h-14 group-hover:scale-110 transition-transform duration-300">
             <Image 
-              src="/images/citrologoficial.svg" 
+              src="/images/Citro png logo.png" 
               alt="Citronela Logo" 
               fill
               className="object-contain"

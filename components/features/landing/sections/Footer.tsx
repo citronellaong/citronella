@@ -10,12 +10,12 @@ export const Footer = () => {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-0.5">
             <div className="relative w-11 h-11">
-              <Image 
-                src="/images/citrologoficial.svg" 
-                alt="Citronela Logo" 
-                fill
-                className="object-contain"
-              />
+                <Image 
+                  src="/images/Citro png logo.png" 
+                  alt="Citronela Logo" 
+                  fill
+                  className="object-contain"
+                />
             </div>
             <span className={`${avigea.className} text-2xl font-normal tracking-wide`}>
               <span className="text-lime-400">Citro</span><span className="text-white">nela</span>
